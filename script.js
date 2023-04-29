@@ -18,7 +18,7 @@ function IELTS(listening, reading, writing, speaking){
             }
             count += temp[i]
         }else {
-            return 'bad request'
+            return 'bad request❌'
         }
     }
     count = count/4
@@ -31,11 +31,11 @@ function IELTS(listening, reading, writing, speaking){
     }else if (count - Math.floor(count) > 0.5) {
         count = floorcount + 1
     }
-    return  +count.toFixed(1)
-    
+    return  count.toFixed(1)
+
 }
 
-console.log(IELTS(6.7, 7.5, 8.5, 9.1))
+console.log(IELTS(6.7, 7.5, 8.5, 9.0))
 
 let forum = document.getElementById('forum')
 
@@ -50,5 +50,5 @@ forum.onsubmit = async function(e) {
 
     const res = IELTS(+listening.value, +reading.value, +writing.value, +speaking.value)
     console.log(res);
-    temp.innerHTML = `${res}`
+    temp.innerHTML = res.toString()
 }

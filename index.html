@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IELTS BANDSCORE CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="forum">
-        <input id="listening">
-        <input id="reading">
-        <input id="writing">
-        <input id="speaking">
+        <b>listening</b>
+        <input id="listening" placeholder="type here ...">
+
+        <b>reading</b>
+        <input id="reading" placeholder="type here ...">
+
+        <b>writing</b>
+        <input id="writing" placeholder="type here ...">
+        
+        <b>speaking</b>
+        <input id="speaking" placeholder="type here ...">
         <button type="submit">check</button>
+        <div class="res">
+            <h3>result here: </h3>
+            <b id="temp"></b>
+        </div>
     </form>
-    <b id="temp"></b>
 
     <script type="text/javascript" src="./script.js"></script>
 </body>
