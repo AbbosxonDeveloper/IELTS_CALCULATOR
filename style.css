@@ -14,7 +14,7 @@ input {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 260px;
     margin: 0 auto;
     gap: 10px;
 }
@@ -26,7 +26,7 @@ button {
     background-color: blueviolet;
     color: #fffdde;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .res {
